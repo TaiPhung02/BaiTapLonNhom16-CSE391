@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="overlay">
+        <form onsubmit="event.preventDefault();validateForm()">
+            <h1>Contact Me</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Your email">
+            <small class="error"></small>
+            
+            <label for="name">Message</label>
+            <textarea type="message" id="message" placeholder="Your message " row="6"></textarea>
+            <small class="error"></small>
+            
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+<script src="/js/contact.js"></script>
+</body>
+</html>
