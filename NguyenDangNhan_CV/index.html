@@ -262,7 +262,31 @@
         </div>
       </div>
     </div>
+  </div>
+    <div class="bottom-footer">
+      <div class="overlay">
+        <form onsubmit="event.preventDefault();validateForm()">
+            <h1>Contact Me</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
 
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Your email">
+            <small class="error"></small>
+            
+            <label for="name">Message</label>
+            <textarea type="message" id="message" placeholder="Your message " row="6"></textarea>
+            <small class="error"></small>
+            
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+<script src="/js/contact.js"></script>
+    </div>
 </body>
 
 </html>
