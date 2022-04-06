@@ -376,3 +376,7 @@ input[type="submit"]{
 #sucess{
     color: #28A745;
 }
+html
+{
+    scroll-behavior: smooth;
+}
