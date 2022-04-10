@@ -5,7 +5,7 @@
   <title>Create a Resume website in HTML & CSS</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -17,15 +17,15 @@
   <div class="header">
     <div class="navbar">
       <div class="logo">
-        <a href="#">Resume</a>
+        <a href="#">NHAN NGUYEN</a>
       </div>
 
       <div class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="linknav">
+          <li><a href="#about">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Resume</a></li>
+          <li><a href="#bottom-footer">Contact</a></li>
         </ul>
       </div>
       <div class="contact-info">
@@ -40,13 +40,13 @@
 
     <div class="banner">
       <div class="app-text">
-        <h1><span>Hello,</span> I'm<br>People</h1>
+        <h1><span>Hello,</span> I'm<br>NHAN NGUYEN</h1>
         <div class="primary-btn">
           <div class="btn-group">
             <div class="play-btn">
               <div class="play-btn-inner">
                 <i class="fa fa-play"></i>
-                <span><a href="#about" style="color:white;">Watch Resume</a></span>
+                <span><a href="#about">Watch Resume</a></span>
               </div>
             </div>
           </div>
@@ -262,7 +262,31 @@
         </div>
       </div>
     </div>
+  </div>
+    <div id="bottom-footer">
+      <div class="overlay">
+        <form onsubmit="event.preventDefault();validateForm()">
+            <h1>Contact Me</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
 
+            <label for="name">Email</label>
+            <input type="email" id="email" placeholder="Your email">
+            <small class="error"></small>
+            
+            <label for="name">Message</label>
+            <textarea type="message" id="message" placeholder="Your message " row="6"></textarea>
+            <small class="error"></small>
+            
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+<script src="/js/contact.js"></script>
+    </div>
 </body>
 
 </html>
