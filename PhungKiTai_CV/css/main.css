@@ -14,10 +14,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* img {
+img {
   max-width: 100%;
   width: 100%;
-} */
+}
 
 .container {
   max-width: 1200px;
@@ -106,19 +106,6 @@ header {
   color: white !important;
 }
 
-/* logo */
-/* .navbar__logo img {
-  width: 57px;
-  height: 57px;
-  object-fit: cover;
-}
-
-.navbar__logo a{
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-right: auto;
-  transition: all 0.3s ease 0s;
-} */
 
 /* menu */
 .navbar__links {
@@ -413,8 +400,8 @@ header {
 }
 
 .works__img--single {
-  width: 20rem;
-  height: 20rem;
+  width: 27rem;
+  height: 15rem;
   margin: 2em;
   box-shadow: 0 0.1rem 1.5rem -0.3rem #d9dde0;
 }
